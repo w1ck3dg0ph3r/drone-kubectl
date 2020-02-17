@@ -1,0 +1,27 @@
+kind: pipeline
+
+steps:
+
+- name: build
+  image: plugins/docker
+  settings:
+    repo: w1ck3dg0ph3r/drone-kubectl
+    build_args:
+    - KUBECTL_VERSION=stable
+    tags: latest
+    force_tag: true
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+
+- name: test
+  image: w1ck3dg0ph3r/drone-kubectl:latest
+  commands:
+  - kubectl version | grep -oE 'GitVersion:"[^"]+"'
+
+trigger:
+  branch:
+  - master
+  event:
+  - push
