@@ -1,4 +1,4 @@
-# drone-kubectl
+# drone-kubectl [![Build Status](https://cloud.drone.io/api/badges/w1ck3dg0ph3r/drone-kubectl/status.svg)](https://cloud.drone.io/w1ck3dg0ph3r/drone-kubectl)
 
 [Drone CI](https://drone.io/) plugin that allows you to use preconfigured kubectl
 
@@ -64,7 +64,7 @@ The variable substitution is performed on any `.yaml` file, referenced in kubect
 ### Build arguments
 
 Argument | Description
---- | --- | ---
+--- | ---
 KUBECTL_VERSION | `kubectl` version to download. Possible values are `latest`, `stable` or exact version (e.g. `v1.17.3`). The default is `stable`.
 
 
