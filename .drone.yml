@@ -17,6 +17,8 @@ steps:
 
 - name: test
   image: w1ck3dg0ph3r/drone-kubectl:latest
+  settings:
+    server: dummy
   commands:
   - kubectl version | grep -oE 'GitVersion:"[^"]+"'
 

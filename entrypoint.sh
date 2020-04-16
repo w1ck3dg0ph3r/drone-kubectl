@@ -1,4 +1,4 @@
-# !/bin/sh
+#!/bin/sh
 
 INIT_FILE=/.initfile
 if [ ! -f $INIT_FILE ]; then
