@@ -52,7 +52,7 @@ token | Account token (e.g. `default:ney2cm73c3pfmtpbmx7nehhxsvxsjbyejf23zy48jy8
 namespace | Default namespace to use. If not specified, namespace `default` is used.
 substitute | List of extra files to run variables substitution on.
 
-Any additional settings provided will be available for variable substitution alongside [Drone defined environment variables](https://docker-runner.docs.drone.io/configuration/environment/variables/) under the name `PLUGIN_<uppercase settings name>`.
+Any additional settings provided will be available for variable substitution alongside [Drone defined environment variables](https://docs.drone.io/pipeline/environment/reference/) under the name `PLUGIN_<uppercase settings name>`.
 
 ## Variable Substitution
 
