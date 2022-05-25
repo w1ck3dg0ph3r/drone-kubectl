@@ -46,7 +46,7 @@ steps:
 Name | Description
 --- | ---
 server | Server url (e.g. `https://xxx.xxx.xxx.xxx:6443`).
-cert | Server TLS certificate. If not specified, TLS verification will be skipped.
+cert | Server TLS certificate, base64 encoded. If not specified, TLS verification will be skipped.
 user | Account name. If not specified, `default` is used.
 token | Account token (e.g. `default:ney2cm73c3pfmtpbmx7nehhxsvxsjbyejf23zy48jy8p2qfxhfgec2`)
 namespace | Default namespace to use. If not specified, namespace `default` is used.
